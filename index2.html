@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<link rel="stylesheet" href="cod.css">
+
+<body>
+
+<header>
+	
+	<span><h1 class="t2">Insurance company</h1>
+	</span>
+</header>
+
+<div class="mid2">
+	
+<div class="o1"><p>Your Name: <input type="text" id="name1" name="name1" value=""/></p></div>
+
+
+<div class="o2"><p>Age: <input type="text" id="age1" name="age1" value=""/></p></div>
+
+<div class="o3"><p>Country: <input type="text" id="country1" name="country1" value=""/></p></div>
+
+<div class="o3"><p>Horspower: <input type="text" id="hors1" name="hors1" value=""/></p></div>
+
+</div>
+<div class="cal">
+	
+	<button onclick="liczenie()"> Calculate </button>
+</div>
+<footer>
+	
+<p class="f1"><span id="wynik"></span> </p>
+
+</footer>
+<script>
+
+
+
+
+function liczenie(){
+
+	var  x1 = document.getElementById("name1").value,
+	
+     		x2 = document.getElementById("age1").value,
+
+				x3 = document.getElementById("hors1").value,
+
+	wynik = (x3 * 100) / x2 + 150,
+
+		x4 = parseFloat(wynik),
+		x5 = x4.toPrecision(2)
+
+
+	document.getElementById("wynik").innerHTML = "Hallo, " + x1 + " you will pay " + wynik + " per year."
+
+	
+
+}
+
+</script>
+</body>
+</html>
